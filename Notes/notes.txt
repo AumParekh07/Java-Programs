@@ -1,0 +1,228 @@
+JAVA Scanner Class:
+->it is under java.util.Scanner
+->provides various ways to provide i/p from keybord
+->can provide different data types such as int,float,double,
+string etc.
+->Methods:-
+next();
+nextInt();
+nextByte();
+nextDouble();
+nextFloat();
+nextLine();
+next().charAt(); 
+
+
+
+Looping construct:-
+two types of loop
+1.entery controll loop
+2.exit controll loop
+
+1.Entry controll loop:-
+While 
+for
+2.Exit controll loop:-
+do while
+
+->While loop:
+while (condition)
+{
+statement;
+}
+
+->For loop:
+for(initial;testing;increment)
+{
+statement;
+}
+
+->do while loop:
+do
+{
+statement;
+}while(condition)
+
+->Nested loop
+1.while(condition)
+{
+while(condition)
+{
+statement
+}
+}
+
+2.for(init;condition;inc/dec)
+{
+for(init;condition;incre/dec)
+{
+statement
+}
+}
+
+3.do
+{
+do
+{
+statement;
+}while(condition)
+}while(condition)
+
+
+Ex-1:
+int m;
+for(m=0;false;m++)
+{
+sout("ABC")//
+}
+sout("DEF")
+}
+Ans:Statement unreachable error because false
+int m;
+for(m=0;true;m++)
+{
+sout("ABC")
+}
+sout("DEF")//
+}
+Ans:Statement unreachable error because false
+
+Ex-2:
+class test{
+int i=0;
+do
+{
+sout("loop")
+}
+while(i!=0)
+}
+
+Ans:Loop
+
+
+Ex-3:
+do
+{
+sout("LJ")
+}
+while(true)
+sout("University")
+
+
+Ans:Statement unreachable
+
+Ex-4:
+class test{
+psvm(String[] abc)  //psvm(String abc[]) is also correct
+{
+int x=1;
+iny y=6;
+while(y--)
+{
+x++
+}
+sout("x="+x)
+Ans:Error because while is always boolean return so type error
+
+Ch-2:-
+Array in java:
+Types in java 
+->single dimention
+->multi dimention
+2D,3D,ND
+
+->Declarition:-
+type var[];
+type[] var;
+
+->memory allocation:
+var=new type[size];
+
+->Initial value of array:-
+boolean->false
+int->0
+double->0.0
+string->null
+Ex:
+int[] arr;
+arr=new int[5];
+a[0]=3;
+a[4]=9;
+
+->Initilization type
+compliation time
+run time
+
+EX: int arr={1,2,3};
+    int[] a=new int[5];
+
+import java.util.*
+psvm(String[] args)
+{
+int a[]={1,2,3,4,5};
+Arrays.sort(a)
+for(int i=0;i<a.length;i++)
+{
+sout(a[i])
+}
+}
+
+Dt:-19/03/24
+For each loop:-
+1.1D array
+int []arr={10,20,30,40,50};
+for(int val:arr)
+{
+sout(val)
+}
+2.2D array
+int [][]A=new int[2][2]
+for(int i:A)
+{
+for(int j:i)
+{
+sout(j)
+}
+}
+
+
+String&String Buffer:-
+->String name1="Hello";
+->String name=new String("Hi");
+
+sout(name1)
+sout(name2)
+
+sout(name1.equals(name2));
+sout(name1.equalsIgnoreCase(name2));
+
+sout(name1.length());
+
+sout(name1.charAt(1));
+
+sout(name1.toUpperCase());
+sout(name2.toLowerCase());
+
+sout(name2.trim());
+
+char []arr=name2.toCharArray();
+sout(arr[0]);
+
+
+String Buffer:-
+java.util.*;
+public class StringBuffer {
+    public static void main(String[] args) {
+        StringBuffer sb1=new StringBuffer();
+        StringBuffer sb2 =new StringBuffer(9);
+        StringBuffer sb3 =new StringBuffer("Hello"); 
+	
+	sout(sb1.capacity())//Ans:-16 bydefault capacity	
+	sout(sb2.capacity())//Ans:9
+	sout(sb3.capacity())//Ans:21 because bydefault 16+5
+
+	sout(sb1.chatAt(0));
+	sout(sb3.reverse());
+	sout(sb3.append(("1+i)); 
+    }
+}
